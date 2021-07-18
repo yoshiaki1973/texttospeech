@@ -15,7 +15,7 @@ def submit():
     a = request.form['text']
     tts = gtts.gTTS(a, lang="ja")
     title = "sound.mp3"
-    #tts.save( "./mp3/{0}".format(title))
+    tts.save( "./mp3/{0}".format(title))
     return render_template('done.html')
 
 if __name__ == "__main__":
