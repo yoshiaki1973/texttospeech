@@ -4,7 +4,11 @@
     <title>Sample Page</title>
 </head>
 <body>
-    <h1> Hello, Flask!</h1>
-    <h2> This is html file.</h2>
+    <h2>テキストエリア</h2>
+	
+	<form action="{{ url_for('submit') }}" method="post">
+		<p><textarea name="text" rows="30" cols="80"></textarea></p>
+		<p><input type="submit"></p>
+	</form>
 </body>
 </html>
