@@ -12,11 +12,11 @@ def top():
 
 @app.route('/submit', methods=['POST'])
 def submit():
-    a = request.form['text']
+    #a = request.form['text']
     #tts = gtts.gTTS(a, lang="ja")
-    title = "sound.mp3"
+    #title = "sound.mp3"
     #tts.save( "./mp3/{0}".format(title))
-    return render_template('done.html', file = title , text = a)
+    return render_template('done.html')
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 5000)), threaded=True)
