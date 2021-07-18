@@ -14,9 +14,9 @@ def top():
 def submit():
     a = request.form['text']
     print(a)
-    tts = gtts.gTTS(a, lang="ja")
+    #tts = gtts.gTTS(a, lang="ja")
     title = "sound.mp3"
-    tts.save( "./mp3/{0}".format(title))
+    #tts.save( "./mp3/{0}".format(title))
     return render_template('completed.html', file = title , text = a)
 
 if __name__ == "__main__":
